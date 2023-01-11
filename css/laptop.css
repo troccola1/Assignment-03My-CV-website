@@ -1,0 +1,391 @@
+@media (min-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --link-color: #199cdb;
+    --line-color: rgb(220, 220, 220);
+    --click-color: rgb(127, 133, 131);
+    --background1-color: rgb(224, 224, 224);
+    --background2-color: rgb(210, 224, 224);
+  }
+  /* Căn chỉnh cho toàn bộ container  */
+  section > .container {
+    width: 1170px;
+    margin: auto;
+    display: block;
+    padding: 30px 50px;
+  }
+  /* Thay đổi font chữ và tăng khoảng cách giữa các dòng */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+  }
+
+  /* Tăng khoàng cách margin lên 20px */
+  .make-marking-20 {
+    margin: 20px 0px;
+  }
+  /* Căn chỉnh hình chữ */
+  #banner {
+    background-size: cover;
+  }
+  /* Màu của icon */
+  .icon-color {
+    color: var(--link-color);
+  }
+  /* Căn chỉnh tên ra giữa ảnh + Đẩy job ra giữa  */
+  .name-and-job {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  /* Tạo khoản cách giữa name & job */
+  .name-and {
+    margin-bottom: 10px;
+  }
+  /* Nav-bar */
+  /* Màu chữ+ cỡ chữ+ xóa dòng gạch chân của link */
+  #nav-bar a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  #nav-bar a:hover {
+    background-color: var(--link-color);
+    color: white;
+  }
+  /* Hiệu ứng click chuột vào */
+  #nav-bar a:active {
+    background-color: rgb(127, 133, 131);
+    color: white;
+  }
+  /* Căn chỉnh màu và kích thước của job trong link thứ 3 */
+  .job-nav-bar {
+    margin-top: 20px;
+    color: gray;
+    font-size: 15px;
+  }
+  /* Căn chỉnh tên của và kích thước chữ trong link thứ 3  */
+  .name-nav-bar {
+    font-size: 30px;
+    margin: 0px 200px;
+  }
+  /* Căn chỉnh cái khung của 4 link trong nav-bar về giữa */
+  .padding-nav-bar {
+    padding: 30px;
+    text-transform: uppercase;
+  }
+  /* Vẽ 2 đường trong link 2-4 */
+  .boderline {
+    border-left: 1px solid var(--line-color);
+    border-right: 1px solid var(--line-color);
+  }
+  /* Thay đổi kích thước khi brow nhỏ hơn 1200 */
+  .container-nav-bar {
+    text-align: center;
+    align-items: center;
+  }
+  /* Tùy chỉnh Mục tiêu nghề nghiệp- thông tin cá nhân */
+  /* Chia làm 2  */
+  #about.bg-grey {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+  }
+  /* Di chuyển Mục tiêu nghề nghiệp tiêu vào  */
+  .container1 {
+    padding: 10px 35px 20px 200px;
+    background-color: var(--background1-color);
+  }
+  .container2 {
+    padding: 10px 40px 20px 30px;
+    background-color: var(--background2-color);
+  }
+  /* Căng chỉnh h1 trong nội dung 1 */
+  #target h1,
+  #personal-info h1 {
+    margin-bottom: 20px;
+  }
+  /* Thay đổi màu của đoạn p */
+  .container1 p {
+    color: gray;
+  }
+  /* Thay đổi mày chữ trong thẻ li */
+  .text-color {
+    color: gray;
+  }
+  /* 6 cái khung */
+  /* Tạo ra 3 cột 2 hàng */
+  #job-info > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  /* Tạo khung cho từng phần */
+  .make-boder {
+    border: 1px solid #199cdb;
+  }
+  /* Xắp xếp khung theo thứ tự của đề bài */
+  .EXD {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  Xắp xếp khung theo thứ tự của đề bài */ .ACT {
+    grid-row-start: 2;
+    grid-column: 1/2;
+  }
+  /* Xắp xếp khung theo thứ tự của đề bài */
+  .Skill {
+    grid-row-start: 1;
+    grid-column: 2/3;
+  }
+  /* Xắp xếp khung theo thứ tự của đề bài */
+  .LAN {
+    grid-row-start: 1;
+    grid-column: 3/4;
+  }
+  /* Xắp xếp khung theo thứ tự của đề bài */
+  .HOB {
+    grid-row-start: 2;
+    grid-column: 3/4;
+  }
+  /* Chia tiêu đề và icon ra 75% và 25% và làm thẳng hàng */
+  .making-in-Line {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin: 40px 0px;
+    justify-content: space-between;
+    justify-self: end;
+  }
+  /* Đẩy tiêu đề ra bằng với dấu của thẻ <ul> */
+  .making-in-Line h1 {
+    margin: 0px 10px;
+  }
+  /* Tùy chỉnh cho icon */
+  .making-in-Line i {
+    margin-right: 20px;
+    font-size: 45px;
+    color: gray;
+  }
+  /* Tùy chỉnh cái chữ giống như mẫu */
+  .styleHere {
+    background-color: #199cdb;
+    border-radius: 5px;
+    color: white;
+    font-style: italic;
+  }
+  /* Thay đổi dấu chấm trước Ul thành màu xanh */
+  .mid ul li::marker {
+    color: #199cdb;
+  }
+  /* Thay đổi màu nội dung trong job-info */
+  .container-mid01 {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: gray;
+  }
+  /* Căn chỉnh 4 icon nằm ngang trong sở thích */
+  .four-Icons {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    justify-content: left;
+  }
+  /* Tạo vòng tròn cho 4 icon */
+  .makeIcon {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    color: #199cdb;
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+  }
+  /* Căn chỉnh cái loa ra giữa vòng tròn */
+  .ic-megaphone:before {
+    position: relative;
+    top: 11px;
+    left: 7px;
+  }
+  /* Căn chỉnh con ngựa ra giữa vòng tròn */
+  .ic-strategy:before {
+    position: relative;
+    top: 12px;
+    left: 15px;
+  }
+  /* Căn chỉnh cái khí cầu ra giữa vòng tròn */
+  .ic-hotairballoon:before {
+    position: relative;
+    top: 13px;
+    left: 14px;
+  }
+  /* Căn chỉnh cái túi ra giữa vòng tròn */
+  .ic-basket:before {
+    position: relative;
+    top: 14px;
+    left: 7px;
+  }
+  /* Căn chỉnh 4 cái tên giữa vòng tròn */
+  .four-names {
+    display: flex;
+    gap: 15px;
+    margin: 10px 20px;
+    padding-bottom: 20px;
+    /* margin-left: 20px;
+    margin-top: 10px; */
+  }
+  /* Căn chỉnh tên cái loa ra giữa vòng tròn */
+  .DL {
+    margin-left: 10px;
+  }
+  /* Căn chỉnh cái tên nấu ăn giữa vòng tròn */
+  .NA {
+    margin-left: 12px;
+  }
+  /* Căng chỉnh nội dung vào 20px để đều với mục dưới */
+  .container-move {
+    margin-left: 20px;
+  }
+  /* Hiện màu xanh hơn */
+  .making-blue-line {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+  }
+  /* Hiện màu xám hơn */
+  .making-gray-line {
+    background: gray;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+  }
+  /* Hiện màu xanh đậm hơn */
+  .making-blue2-line {
+    background: #199cdb;
+    display: inline-block;
+    height: 3px;
+    margin-right: 10px;
+    width: 45px;
+  }
+  /* Giải thưởng */
+  /* Chứng chỉ giải thưởng ra 2 hàng */
+  .MakingGrid03 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0px 70px;
+  }
+
+  /* Vẽ đường bên phải cho chứng chỉ 1 */
+  .certificate1 {
+    border-right: 1px solid #d6c08d;
+  }
+  /* Vẽ cái đường chia đôi  */
+  .certificate3 {
+    border-top: 1px solid #d6c08d;
+    grid-column: 1/-1;
+    padding-top: 30px;
+  }
+  /* Viết hoa toàn mục và cách dưới 15px */
+  .likeh3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  /* Căn chỉnh hình và chữ thành 1 hàng */
+  .making-in-Line02 {
+    display: flex;
+  }
+  /* Căn chỉnh giữa hình ảnh chữ bằng nhau */
+  .A-line {
+    margin: 20px;
+  }
+  /* Tùy chỉnh Dự Án */
+  /* Chia Dự án ra làm 3 */
+  .Make-grid-project-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 30px;
+  }
+  .marking-border {
+    border: 1px solid gray;
+  }
+  /* Căn chỉnh chữ CV Cá nhân */
+  .After-end {
+    padding: 15px 15px;
+    border-top: 0.5px solid gray;
+    padding-left: 20px;
+  }
+  /* Tạo đường giữa bản quanh dự án */
+  table,
+  th,
+  td {
+    border-top: 1px solid gray;
+    vertical-align: top;
+  }
+  /* Căn chỉnh bản phía dưới dự án */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 170px;
+    text-align: left;
+  }
+  /* Căn chỉnh td cuối cùng trong <table> */
+  .Making-padding {
+    padding-bottom: 15px;
+  }
+  /* Đưa các thẻ td đầu vào để thẳng hàng dọc */
+  .move-10px {
+    padding-left: 10px;
+  }
+
+  /* Căn chỉnh footer */
+  #foote {
+    width: 100%;
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    padding: 30px;
+  }
+  #foote i {
+    padding-right: 50px;
+  }
+  /* Thay đổi màu sắc cho icon */
+  i.icon-github-circled::before,
+  .icon-facebook-circled::before,
+  .icon-linkedin-circled::before {
+    color: #199cdb;
+  }
+}
+.hidden {
+  display: none;
+}
+.view-more,
+.view-less {
+  padding: 20px;
+}
+.height {
+  height: 50%;
+}
+
+.exd:hover .view-more
+{
+  display: block;
+}
+
+/* .make-boder :hover {
+
+} */
